@@ -125,13 +125,14 @@ article img {
 /* 3 brytpunkter */
 /* 375px, 768px, 1000px */
 
+/*iPad/tablet size (multiply with 2.048 or 204.8%)*/
 @media only screen and (min-width: 768px) {
     .header-background {
         height: 690px;
     }
 
     h2 {
-        font-size: 5rem;
+        font-size: 2.048vw;
     }
 }
 

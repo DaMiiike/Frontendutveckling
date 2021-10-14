@@ -23,9 +23,12 @@ p {
     font-size: 1rem;
     padding-bottom: 2rem;
 }
+video {
+    width: 100%;
+}
 /*============================================================*/
 .box {
-   /* border: red solid; Just for show, remove when done*/
+   /* border: red solid;  Just for show, remove when done*/
 }
 /*============================================================*/
 /*HEADER Style*/
@@ -107,26 +110,28 @@ article img {
     justify-content: center;
     height: auto;
     color: white;
-    border: red solid; /*JFS, delete when done*/
 }
 .footer-box-1,
 .footer-box-2 {
-    border: solid turquoise; /*JFS, delete when done*/
     width: 35%;
     padding: 3rem 0 3rem 0;
 }
-.footer-box-2 {
-
+.footer-box-1 {
+    margin-right: 4rem;
 }
-
+.footer-box-2 > .footer-box-2-text {
+    margin-top: 5rem;    
+}
 /* 3 brytpunkter */
 /* 375px, 768px, 1000px */
 
 @media only screen and (min-width: 768px) {
     .header-background {
-
         height: 690px;
-        
+    }
+
+    h2 {
+        font-size: 5rem;
     }
 }
 

@@ -1,7 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;1,100;1,600&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', Verdana, sans-serif; /*added Verdana as web safe font */
+    font-size: 6px;
 }
 
-/* bekräfta font Montserrat*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 3rem;
+    padding-bottom: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+p {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+/*============================================================*/
+.box {
+   /* border: red solid; Just for show, remove when done*/
+}
+/*============================================================*/
+/*HEADER Style*/
+header {
+    width: 100%;
+    height: auto;
+}
+.header-background {
+    background-image: url(./pic/header.png.png);
+    background-repeat: no-repeat;
+    background-size: 126%;
+    background-position: center top;
+    width: 100%;
+    height: 290px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+header div .header-text {
+    margin: 0 15% 0 15%;
+    text-align: right;
+}
+
+header div .header-text h1 {
+    margin-right: 10%;
+}
+
+/*ARTICLE 1*/
+article {
+    display: flex;
+    /* flex-direction: row; */
+}
+.text-article-1 {
+    margin: 12% 0 0 10%;
+}
+article img {
+    width: 50%;
+    height: 50%;
+}
+
+/*ARTICLE 2*/
+.text-article-2 {
+    margin: 12% 10% 0 0;
+    text-align: right;
+}
+/*ARTICLE 3*/
+.text-article-3 {
+    display: flex;
+    flex-direction: column;
+}
+.text-article-3 p {
+    margin: 0 15% 0 15%;
+}
+/*FOOTER with background*/
+.footer-background {
+    background-image: url(./pic/Q1_newsletter-02.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    height: 16rem;
+    flex-direction: column;
+    padding-top: 9em;
+}
+.footer-background > h1,
+.footer-background > p {
+    margin: 0 15% 0 15%;
+    text-align: center;
+}
+/*FOOTER SOLID*/
+.footer-solid {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    color: white;
+    border: red solid; /*JFS, delete when done*/
+}
+.footer-box-1,
+.footer-box-2 {
+    border: solid turquoise; /*JFS, delete when done*/
+    width: 35%;
+    padding: 3rem 0 3rem 0;
+}
+.footer-box-2 {
+
+}
+
+/* 3 brytpunkter */
+/* 375px, 768px, 1000px */
+
+@media only screen and (min-width: 768px) {
+    .header-background {
+
+        height: 690px;
+        
+    }
+}
+
+
+
+/* @media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: ){
+
+} */

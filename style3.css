@@ -36,11 +36,7 @@ video {
 .header-text-no-padding-bottom {
     padding-bottom: 0;
 }
-/*============================================================*/
-.box {
-   /* border: red solid;  Just for show, remove when done*/
-}
-/*============================================================*/
+
 /*HEADER Style*/
 header {
     width: 100%;

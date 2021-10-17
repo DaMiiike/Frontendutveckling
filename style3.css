@@ -12,7 +12,7 @@ body {
     flex-direction: column;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     padding-bottom: 2.5rem;
 }
 h2 {
@@ -23,8 +23,14 @@ p {
     font-size: 1rem;
     padding-bottom: 2rem;
 }
+.top-logo {
+    font-size: 1.6rem;
+}
 video {
     width: 100%;
+}
+.header-text-no-padding-bottom {
+    padding-bottom: 0;
 }
 /*============================================================*/
 .box {
@@ -42,8 +48,8 @@ header {
     background-size: 126%;
     background-position: center top;
     width: 100%;
-    height: 290px;
-    padding-top: 4rem;
+    height: 300px;
+    padding-top: 3rem;
     padding-bottom: 2rem;
     text-align: center;
     display: flex;
@@ -64,14 +70,13 @@ header div .header-text h1 {
 /*ARTICLE 1*/
 article {
     display: flex;
-    /* flex-direction: row; */
 }
 .text-article-1 {
     margin: 12% 0 0 10%;
 }
 article img {
     width: 50%;
-    height: 50%;
+    height: auto;
 }
 
 /*ARTICLE 2*/
@@ -91,7 +96,7 @@ article img {
 .footer-background {
     background-image: url(./pic/Q1_newsletter-02.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 101%;
     background-position: center top;
     height: 16rem;
     flex-direction: column;
@@ -104,7 +109,7 @@ article img {
 }
 /*FOOTER SOLID*/
 .footer-solid {
-    background-color: black;
+    background-color: #1A1919;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -127,21 +132,30 @@ article img {
 
 /*iPad/tablet size (multiply with 2.048 or 204.8%)*/
 @media only screen and (min-width: 768px) {
+    * {
+        font-size: 2.048vw;
+    }
     .header-background {
         height: 690px;
     }
+    /*FOOTER with background*/
+.footer-background {
+    height: 12rem;
+}
+    /*FOOTER SOLID*/
+.footer-solid {
+    height: 20rem;
+}
+}
 
-    h2 {
-        font-size: 2.048vw;
+
+
+@media only screen and (min-width: 999px) {
+    .header-background {
+        padding: 0 0 15% 0
+    }
+    
+    header div .header-text {
+        margin: 55% 15% 20% 15%;
     }
 }
-
-
-
-/* @media only screen and (max-width: 768px) {
-
-}
-
-@media only screen and (max-width: ){
-
-} */
